@@ -1,29 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from './components/hero';
+import About from "./components/about"; //arrow function name amd import should be same 
+import Navbar from "./components/navbar";
+import Tours from "./components/tours";
+import Services from "./components/services";
+import Footer from "./components/footer";
 
 function App() {
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
+  
   console.log('hello');
   return(
-    <h1>Backroads app</h1>
+    <>
+    <Navbar/>
+    <Hero/>  
+    <About/>
+    <Services/>
+    <Tours/>
+    <Footer/>
+    
+    </>
   )
-}
+};
 
 export default App;
